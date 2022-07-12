@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgrond: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
+
+body {
+  background: var(--backgrond);
+  font-family: "Manrope", sans-serif;
+  height: 100vh;
+}
+
+.container {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+/*HEADER*/
+.header {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-menu-mobile);
+  margin-bottom: 88px;
+  padding: 25px;
+  position: relative;
+}
+
+/*Menu Open*/
+.close {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  background: var(--backgrond);
+  height: 100vh;
+  transform: 0.5s;
+}
+
+.menu-mobile {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-menu-mobile);
+  padding: 25px;
+}
+
+.menu-list li {
+  list-style: none;
+  border-top: 1px solid var(--border-menu-mobile);
+  padding: 18px 25px;
+  border-left: 5px solid transparent;
+  transition: 0.3s;
+}
+
+.menu-list li:hover {
+  border-left: 5px solid var(--button);
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: var(--border-menu-mobile);
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 25px;
+  transition: 0.3s;
+}
+
+.menu-list a:hover {
+  color: var(--text-color);
+}
+
+.main p {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 2.5rem;
+  text-align: center;
+  width: 373px;
+  margin: 0 auto 88px;
+}
+
+.main-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: fit-content;
+  height: 15px;
+
+  margin: 0 auto;
+  padding: 15px 25px;
+
+  border: 1px solid var(--button);
+  border-radius: 6px;
+
+  margin-bottom: 88px;
+}
+
+.main-button a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-content h1 {
+  color: var(--text-color);
+  font-size: 3.12rem;
+  font-weight: 700;
+  line-height: 4.25rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 25px;
+}
+
+.h1-stroke {
+  color: black;
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+.main-content img {
+  width: 100%;
+}
+
+.principal-bg {
+  background-image: url(/Rocket-Coffee/assets/blur-mobile.png);
+}
